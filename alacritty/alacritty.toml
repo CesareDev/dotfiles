@@ -1,0 +1,26 @@
+[window]
+dynamic_padding = true
+
+[font]
+size = 14
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
+]
