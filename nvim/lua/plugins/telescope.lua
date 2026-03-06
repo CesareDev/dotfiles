@@ -26,10 +26,10 @@ return {
                         grouped = true,
                         mappings = {
                             ["i"] = {
-                                ["<C-a>"] = fb_actions.create,
-                                ["<C-d>"] = fb_actions.remove,
-                                ["<C-r>"] = fb_actions.rename,
-                                ["<C-c>"] = fb_actions.copy,
+                                ["<M-a>"] = fb_actions.create,
+                                ["<M-d>"] = fb_actions.remove,
+                                ["<M-r>"] = fb_actions.rename,
+                                ["<M-c>"] = fb_actions.copy,
                             }
                         },
                     }

@@ -51,7 +51,6 @@ return {
                     "--compile-commands-dir=build"
                 },
             })
-
             vim.keymap.set('n', '<tab>', vim.lsp.buf.hover, {})
             vim.keymap.set('n', '<leader>h', vim.lsp.buf.code_action, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
