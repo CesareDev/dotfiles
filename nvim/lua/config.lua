@@ -16,9 +16,9 @@ vim.cmd('set signcolumn=number')
 
 vim.keymap.set('n', '.', ':', {})
 
-vim.keymap.set('n', '<M-Up>', 'dd<Up><Up>pV=', {})
-vim.keymap.set('n', '<M-Down>', 'dd$pV=', {})
-vim.keymap.set('n', '<leader>l', '<End>v<Home>yi<End><CR><Esc>p<End>', {})
+vim.keymap.set('n', '<M-Up>', '<Up><End>Vxp<Up>V=', {})
+vim.keymap.set('n', '<M-Down>', '<End>VxpV=', {})
+vim.keymap.set('n', '<leader>l', 'Vy<End>p<End>', {})
 vim.keymap.set('v', '<BS>', '"_d', {})
 
 local function searchAndReplace()
@@ -29,9 +29,6 @@ local function searchAndReplace()
     end
 
     local replace_word = vim.fn.input("Replace with: ")
-    if replace_word == "" then
-        return
-    end
 
     -- Perform the search and replace operation
     vim.cmd("%s@" .. search_word .. "@" .. replace_word .. "@gc")
