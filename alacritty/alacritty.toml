@@ -2,7 +2,7 @@
 dynamic_padding = true
 
 [font]
-size = 14
+size = 12
 
 [font.bold]
 family = "CaskaydiaCove Nerd Font"

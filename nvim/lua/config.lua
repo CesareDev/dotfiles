@@ -15,8 +15,8 @@ vim.diagnostic.config({
 })
 
 vim.keymap.set('n', '.', ':', {})
-vim.keymap.set('n', '<M-Up>', ':m .-2==', {})
-vim.keymap.set('n', '<M-Down>', ':m .+1==', {})
+vim.keymap.set('n', '<M-Up>', ':m .-2==<CR>', {})
+vim.keymap.set('n', '<M-Down>', ':m .+1==<CR>', {})
 vim.keymap.set('n', '<leader>l', 'yyp', {})
 vim.keymap.set('v', '<BS>', '"_d', {})
 vim.keymap.set('n', '<leader>t', ':terminal<CR>i', {})
