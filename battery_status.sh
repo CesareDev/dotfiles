@@ -2,6 +2,9 @@
 
 # battery-check.sh
 # Run once; cron will call it every 5 min
+#
+export DISPLAY=:0
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
 
 battery_info=$(acpi -b)
 percent=$(echo "$battery_info" | grep -oP '[0-9]+(?=%)')
