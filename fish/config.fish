@@ -1,10 +1,10 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
+# source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # overwrite greeting
 # potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
+function fish_greeting
+    # smth smth
+end
 
 # Only run in interactive shells
 status is-interactive; or return
