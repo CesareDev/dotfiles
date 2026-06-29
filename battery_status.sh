@@ -20,5 +20,5 @@ elif [[ "$status" == "Discharging" && $percent -le 45 ]]; then
     notify-send -e -u normal -a "Battery" -h "string:sound-name:battery-caution" -i battery-level-20-symbolic "Battery at ${percent}%. Please plug in the charger soon."
 
 elif [[ "$status" == "Discharging" && $percent -le 20 ]]; then
-    notify-send -e -u critical -a "Battery" -h "string:sound-name:battery-caution" -i battery-010-symbolic "Battery at ${percent}%. Plug in immediately!"
+    notify-send -e -u normal -a "Battery" -h "string:sound-name:battery-caution" -i battery-010-symbolic "Battery at ${percent}%. Plug in immediately!"
 fi

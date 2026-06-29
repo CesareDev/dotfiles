@@ -13,6 +13,7 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
+                    "gopls",
                     "clangd",
                 }
             })
@@ -28,6 +29,10 @@ return {
             local capabilities = require('blink.cmp').get_lsp_capabilities()
 
             vim.lsp.config("lua_ls", {
+                capabilities = capabilities
+            })
+
+            vim.lsp.config("gopls", {
                 capabilities = capabilities
             })
 

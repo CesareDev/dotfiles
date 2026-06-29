@@ -14,7 +14,8 @@ alias ls "lsd --color=auto --group-directories-first -v --git"
 alias ll "lsd -alF --color=auto --group-directories-first -v -A --git"
 alias grep "grep --color=auto"
 alias q "exit"
-alias vim "nvim"
+
+export GOPATH="$HOME/.local/go"
 
 # Default editor
 set -x EDITOR nvim
